@@ -8,6 +8,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 
 import BreathingIntroScreen from '../screens/BreathingIntroScreen';
+import BreathingActivityScreen from '../screens/BreathingActivityScreen';
 
 import MuscleTensionIntroScreen from '../screens/MuscleTensionIntroScreen';
 
@@ -26,9 +27,14 @@ const config = Platform.select({
 const HomeStack = createStackNavigator(
   {
     Home: HomeScreen,
+
     BreathingIntro: BreathingIntroScreen,
+    BreathingActivity: BreathingActivityScreen,
+
     MuscleTensionIntro: MuscleTensionIntroScreen,
+
     EyeMovementIntro: EyeMovementIntroScreen,
+
   },
   config
 );
