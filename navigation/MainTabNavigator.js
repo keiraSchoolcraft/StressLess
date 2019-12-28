@@ -9,6 +9,7 @@ import HomeScreen from '../screens/HomeScreen';
 
 import BreathingIntroScreen from '../screens/BreathingIntroScreen';
 import BreathingActivityScreen from '../screens/BreathingActivityScreen';
+import BreathingOutroScreen from '../screens/BreathingOutroScreen';
 
 import MuscleTensionIntroScreen from '../screens/MuscleTensionIntroScreen';
 import MuscleTensionActivityScreen from '../screens/MuscleTensionActivityScreen';
@@ -32,6 +33,7 @@ const HomeStack = createStackNavigator(
 
     BreathingIntro: BreathingIntroScreen,
     BreathingActivity: BreathingActivityScreen,
+    BreathingOutro: BreathingOutroScreen,
 
     MuscleTensionIntro: MuscleTensionIntroScreen,
     MuscleTensionActivity: MuscleTensionActivityScreen,
