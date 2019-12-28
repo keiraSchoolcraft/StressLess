@@ -14,7 +14,11 @@ class EyeMovementIntroScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Eye movement intro</Text>
+        <Text>In this activity, there will be a dot that appears on the screen.
+            You are going to use ONLY your eyes to follow the dot as it moves horizontally and vertically.
+            Three variants of the activity will be shown, each lasting 24 seconds, making 12 eye movements.
+            There will be a 10 second rest interval between each variant.
+        </Text>
         <View style={styles.buttonContainer}>
           <Button
             onPress={() => this.props.navigation.navigate('EyeMovementActivity')}
