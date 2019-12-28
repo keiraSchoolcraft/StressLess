@@ -16,11 +16,11 @@ class BreathingIntroScreen extends React.Component {
       <View style={styles.container}>
         <Text>Breathing Intro</Text>
         <View style={styles.buttonContainer}>
-        <Button
+          <Button
             onPress={() => this.props.navigation.navigate('BreathingActivity')}
             title="Start"
           />
-      </View>
+        </View>
       </View>
     );
   }
