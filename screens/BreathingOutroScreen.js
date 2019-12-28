@@ -11,17 +11,19 @@ import {
 } from 'react-native';
 
 class BreathingOutroScreen extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>breathing outro screen</Text>
-        {/* <Button
-            onPress={() => this.props.navigation.navigate('BreathingOutro')}
-            title="Finished"
-          /> */}
-      </View>
-    );
-  }
+    render() {
+        return (
+            <View style={styles.container}>
+                <Text>breathing outro screen</Text>
+                <View style={styles.buttonContainer}>
+                    <Button
+                        onPress={() => this.props.navigation.navigate('Home')}
+                        title="Take Me Home"
+                    />
+                </View>
+            </View>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
@@ -29,12 +31,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#ccc',
   },
-//   buttonContainer: {
-//     flex: 3,
-//     textAlign: 'center',
-//     justifyContent: 'space-around',
-//     flexDirection: 'column',
-//   },
+  buttonContainer: {
+    flex: 3,
+    textAlign: 'center',
+    justifyContent: 'space-around',
+    flexDirection: 'column',
+  },
 })
 
 export default BreathingOutroScreen
