@@ -14,7 +14,10 @@ class BreathingIntroScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Breathing Intro</Text>
+        <Text>
+          In this activity you will be guided through a slow breathing pattern.
+          You will be asked to inhale for 3s, then exhale for 3s - you will do this 15 times.
+        </Text>
         <View style={styles.buttonContainer}>
           <Button
             onPress={() => this.props.navigation.navigate('BreathingActivity')}
