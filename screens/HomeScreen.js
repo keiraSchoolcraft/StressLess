@@ -22,9 +22,11 @@ class HomeScreen extends React.Component {
             title="Breathing"
           />
           <Button
+            onPress={() => this.props.navigation.navigate('MuscleTensionIntro')}
             title="Muscle Tension"
           />
           <Button
+            onPress={() => this.props.navigation.navigate('EyeMovementIntro')}
             title="Eye Movement"
           />
         </View>

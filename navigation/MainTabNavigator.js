@@ -9,6 +9,10 @@ import HomeScreen from '../screens/HomeScreen';
 
 import BreathingIntroScreen from '../screens/BreathingIntroScreen';
 
+import MuscleTensionIntroScreen from '../screens/MuscleTensionIntroScreen';
+
+import EyeMovementIntroScreen from '../screens/EyeMovementIntroScreen';
+
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
@@ -23,6 +27,8 @@ const HomeStack = createStackNavigator(
   {
     Home: HomeScreen,
     BreathingIntro: BreathingIntroScreen,
+    MuscleTensionIntro: MuscleTensionIntroScreen,
+    EyeMovementIntro: EyeMovementIntroScreen,
   },
   config
 );
