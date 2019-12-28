@@ -13,9 +13,11 @@ import BreathingOutroScreen from '../screens/BreathingOutroScreen';
 
 import MuscleTensionIntroScreen from '../screens/MuscleTensionIntroScreen';
 import MuscleTensionActivityScreen from '../screens/MuscleTensionActivityScreen';
+import MuscleTensionOutroScreen from '../screens/MuscleTensionOutroScreen';
 
 import EyeMovementIntroScreen from '../screens/EyeMovementIntroScreen';
 import EyeMovementActivityScreen from '../screens/EyeMovementActivityScreen';
+import EyeMovementOutroScreen from '../screens/EyeMovementOutroScreen';
 
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
@@ -37,9 +39,11 @@ const HomeStack = createStackNavigator(
 
     MuscleTensionIntro: MuscleTensionIntroScreen,
     MuscleTensionActivity: MuscleTensionActivityScreen,
+    MuscleTensionOutro: MuscleTensionOutroScreen,
 
     EyeMovementIntro: EyeMovementIntroScreen,
     EyeMovementActivity: EyeMovementActivityScreen,
+    EyeMovementOutro: EyeMovementOutroScreen,
 
   },
   config

@@ -10,11 +10,11 @@ import {
   Button,
 } from 'react-native';
 
-class BreathingOutroScreen extends React.Component {
+class EyeMovementOutroScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>breathing outro screen</Text>
+        <Text>eye movement outro screen</Text>
         {/* <Button
             onPress={() => this.props.navigation.navigate('BreathingOutro')}
             title="Finished"
@@ -37,4 +37,4 @@ const styles = StyleSheet.create({
 //   },
 })
 
-export default BreathingOutroScreen
+export default EyeMovementOutroScreen
