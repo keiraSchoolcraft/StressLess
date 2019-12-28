@@ -4,9 +4,15 @@ import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import TabBarIcon from '../components/TabBarIcon';
+
 import HomeScreen from '../screens/HomeScreen';
+
+import BreathingIntroScreen from '../screens/BreathingIntroScreen';
+
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+
+
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -16,6 +22,7 @@ const config = Platform.select({
 const HomeStack = createStackNavigator(
   {
     Home: HomeScreen,
+    BreathingIntro: BreathingIntroScreen,
   },
   config
 );
@@ -60,9 +67,9 @@ const SettingsStack = createStackNavigator(
 );
 
 SettingsStack.navigationOptions = {
-  tabBarLabel: 'Settings',
+  tabBarLabel: 'About',
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'} />
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-bonfire' : 'md-bonfire'} />
   ),
 };
 
