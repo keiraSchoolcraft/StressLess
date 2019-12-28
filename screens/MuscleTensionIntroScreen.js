@@ -14,7 +14,11 @@ class MuscleTensionIntroScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Muscle tension intro</Text>
+        <Text>
+            In this activity, you will be asked to apply tension to certain areas
+            of your body, starting from the toes and working up to the face.
+            Each application of tension should last 10s, with 20s rest intervals in between.
+        </Text>
         <View style={styles.buttonContainer}>
           <Button
             onPress={() => this.props.navigation.navigate('MuscleTensionActivity')}
