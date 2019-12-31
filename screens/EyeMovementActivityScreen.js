@@ -10,7 +10,7 @@ import {
   Button,
 } from 'react-native';
 
-
+{/* <Image source={require('./assets/images/dots1a.png')} /> */}
 class EyeMovementActivityScreen extends React.Component {
   render() {
     return (
@@ -21,6 +21,7 @@ class EyeMovementActivityScreen extends React.Component {
             onPress={() => this.props.navigation.navigate('EyeMovementOutro')}
             title="Finished"
           />
+          <Image source={require('./assets/images/dots1a.png')} />
         </View>
       </View>
     );
