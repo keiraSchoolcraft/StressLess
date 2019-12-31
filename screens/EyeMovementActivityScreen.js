@@ -10,36 +10,142 @@ import {
   Button,
 } from 'react-native';               
 
-{/* <Image source={require('./assets/images/example.png')} /> */}
+const cycleInterval = 2
+const maxCycles = 45
+class ShowTime extends React.Component {
+    render() {
+      return (
+        <View>
+          <Text>{this.props.pics} {this.props.currentTime}</Text>
+        </View>
+      );
+    }
+  }
+  
+  class DotPictureArray extends React.Component {
+    render () {
+      let pics = [
+        <Image source={require('../assets/images/dots1a.png')} />,
+        <Image source={require('../assets/images/dots2a.png')} />,
+        <Image source={require('../assets/images/dots3a.png')} />,
+        <Image source={require('../assets/images/dots4a.png')} />,
+        <Image source={require('../assets/images/dots5a.png')} />,
+        <Image source={require('../assets/images/dots6a.png')} />,
+        <Image source={require('../assets/images/dots7a.png')} />,
+        <Image source={require('../assets/images/dots8a.png')} />,
+        <Image source={require('../assets/images/dots9a.png')} />,
+        <Image source={require('../assets/images/dots10a.png')} />,
+        <Image source={require('../assets/images/dots11a.png')} />,
+        <Image source={require('../assets/images/dots12a.png')} />,
+        '',
+        '',
+        '',
+        '',
+        '',
+      ]
+  
+      return (
+        <Text 
+        style={{
+            alignItems: 'center',
+            justifyContent: 'center',
+
+        }} >
+            {pics[this.props.currentCycle]}</Text>
+      )
+    }
+  }
 class EyeMovementActivityScreen extends React.Component {
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+          currentCycle: 0,
+          timeInCycle: 0,
+          timeOverall: 0,
+        }
+      }
+    
+      componentDidMount() {
+        this.interval = setInterval(() => {
+          this.nextTick()
+        }, 1000)
+      }
+    
+      componentWillUnmount() {
+        clearInterval(this.interval);
+      }
+      nextTick() {
+        if (this.state.currentCycle >= maxCycles) {
+            clearInterval(this.interval)
+            console.log('should navigate')
+            this.props.navigation.navigate('EyeMovementOutro')
+            console.log('did navigate')
+        } else {
+            let timeOverall = this.state.timeOverall
+            this.setState(previousState => (
+                {
+                    currentCycle: Math.trunc(timeOverall / cycleInterval),
+                    timeInCycle: timeOverall % cycleInterval + 1,
+                    timeOverall: timeOverall + 1
+                }
+            ));
+            console.log(this.state);
+        }
+    }
   render() {
     return (
-      <View style={styles.container}>
-        <Text>eye movement activity screen</Text>
-        {/* <Image source={pic} style={{width: 193, height: 110}}/> */}
-        <View style={styles.buttonContainer}>
-          <Button
-            onPress={() => this.props.navigation.navigate('EyeMovementOutro')}
-            title="Finished"
-          />
-          {/* <Image source={require('./assets/images/dots1a.png')} /> */}
+        <View style={styles.container}>
+        <Text style={styles.title}>Eye Movement</Text>
+        {/* <View style={styles.wrapper}>
+          <DoThing currentCycle={this.state.currentCycle} timeInCycle={this.state.timeInCycle} />
+        </View> */}
+        
+        <View style={styles.wrapper}>
+          <DotPictureArray currentCycle={this.state.currentCycle} />
+        </View>
+
+        {/* <View style={styles.wrapper}>
+          <ShowTime label={'Current Cycle'} currentTime={this.state.currentCycle} />
+        </View> */}
+
+        <View style={styles.wrapper}>
+          <ShowTime label={'Time in Cycle'} currentTime={this.state.timeInCycle} />
+        </View>
+
+        <View style={styles.wrapper}>
+          <ShowTime label={'Time Overall'} currentTime={this.state.timeOverall} />
         </View>
       </View>
     );
   }
 }
 
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-  buttonContainer: {
-    flex: 3,
-    textAlign: 'center',
-    justifyContent: 'space-around',
-    flexDirection: 'column',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#ccc',
+        padding: 30,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    buttonContainer: {
+        flex: 3,
+        textAlign: 'center',
+        justifyContent: 'space-around',
+        flexDirection: 'column',
+    },
+    title: {
+        flex: 3,
+        fontSize: 28,
+        padding: 20,
+        textAlign: 'center',
+    },
+    wrapper: {
+        padding: 10,
+        fontSize: 30,
+    },
 })
 
 export default EyeMovementActivityScreen

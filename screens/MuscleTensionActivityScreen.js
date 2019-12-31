@@ -95,7 +95,7 @@ class MuscleTensionActivityScreen extends React.Component {
   render() {
     return (
         <View style={styles.container}>
-        <Text style={styles.title}>Muscle Tension Activity Screen</Text>
+        <Text style={styles.title}>Muscle Tension Activity</Text>
         {/* <View style={styles.wrapper}>
           <DoThing currentCycle={this.state.currentCycle} timeInCycle={this.state.timeInCycle} />
         </View> */}

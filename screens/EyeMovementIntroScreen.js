@@ -14,7 +14,7 @@ class EyeMovementIntroScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>In this activity, there will be a dot that appears on the screen.
+        <Text style={styles.infoText}>In this activity, there will be a dot that appears on the screen.
             You are going to use ONLY your eyes to follow the dot as it moves horizontally and vertically.
             Three variants of the activity will be shown, each lasting 24 seconds, making 12 eye movements.
             There will be a 10 second rest interval between each variant.
@@ -31,16 +31,35 @@ class EyeMovementIntroScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-  buttonContainer: {
-    flex: 3,
-    textAlign: 'center',
-    justifyContent: 'space-around',
-    flexDirection: 'column',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#ccc',
+        padding: 30,
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+    },
+    buttonContainer: {
+        flex: 3,
+        textAlign: 'center',
+        justifyContent: 'space-around',
+        flexDirection: 'column',
+    },
+    title: {
+        flex: 3,
+        fontSize: 28,
+        padding: 30,
+        textAlign: 'center',
+    },
+    wrapper: {
+        padding: 10,
+        fontSize: 30,
+    },
+    infoText: {
+        flex: 4,
+        padding: 10,
+        fontSize: 30,
+        textAlign: 'center',
+    },
 })
 
 export default EyeMovementIntroScreen
