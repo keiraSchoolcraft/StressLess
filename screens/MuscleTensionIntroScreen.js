@@ -14,7 +14,7 @@ class MuscleTensionIntroScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>
+        <Text style={styles.infoText}>
             In this activity, you will be asked to apply tension to certain areas
             of your body, starting from the toes and working up to the face.
             Each application of tension should last 10s, with 20s rest intervals in between.
@@ -33,13 +33,19 @@ class MuscleTensionIntroScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ccc',
   },
   buttonContainer: {
     flex: 3,
     textAlign: 'center',
     justifyContent: 'space-around',
     flexDirection: 'column',
+  },
+  infoText: {
+      flex: 4,
+      padding: 30,
+      fontSize: 35,
+      textAlign: 'center',
   },
 })
 

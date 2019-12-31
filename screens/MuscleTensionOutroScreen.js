@@ -14,7 +14,7 @@ class MuscleTensionOutroScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>muscle tension outro screen</Text>
+                <Text style={styles.infoText}>Thanks for completing the muscle tension activity!</Text>
                 <View style={styles.buttonContainer}>
                     <Button
                         onPress={() => this.props.navigation.navigate('Home')}
@@ -27,16 +27,23 @@ class MuscleTensionOutroScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-  buttonContainer: {
-    flex: 3,
-    textAlign: 'center',
-    justifyContent: 'space-around',
-    flexDirection: 'column',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#ccc',
+      },
+      buttonContainer: {
+        flex: 2,
+        textAlign: 'center',
+        justifyContent: 'space-around',
+        flexDirection: 'column',
+      },
+      infoText: {
+          fontSize: 35,
+          flex: 2,
+          textAlign: 'center',
+          justifyContent: 'space-around',
+          padding: 80,
+      },
 })
 
 export default MuscleTensionOutroScreen

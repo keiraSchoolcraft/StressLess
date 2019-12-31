@@ -50,7 +50,7 @@ class ShowTime extends React.Component {
       ]
   
       return (
-        <Text>{labels[this.props.currentCycle]}</Text>
+        <Text style={styles.muscleText}>{labels[this.props.currentCycle]}</Text>
       )
     }
   }
@@ -100,7 +100,7 @@ class MuscleTensionActivityScreen extends React.Component {
           <DoThing currentCycle={this.state.currentCycle} timeInCycle={this.state.timeInCycle} />
         </View> */}
         
-        <View style={styles.wrapper}>
+        <View style={styles.muscleText}>
           <MuscleGuidanceArray currentCycle={this.state.currentCycle} />
         </View>
 
@@ -121,19 +121,36 @@ class MuscleTensionActivityScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-  title: {
-      fontSize: 45,
-  },
-  buttonContainer: {
-    flex: 3,
-    textAlign: 'center',
-    justifyContent: 'space-around',
-    flexDirection: 'column',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#ccc',
+        padding: 30,
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+    },
+    buttonContainer: {
+        flex: 3,
+        textAlign: 'center',
+        justifyContent: 'space-around',
+        flexDirection: 'column',
+    },
+    title: {
+        flex: 3,
+        fontSize: 28,
+        padding: 30,
+        textAlign: 'center',
+    },
+    wrapper: {
+        padding: 10,
+        fontSize: 30,
+    },
+    muscleText: {
+        fontSize: 60,
+        flex: 5,
+        padding: 20,
+        alignContent: 'center',
+        textAlign: 'center',
+    },
 })
 
 export default MuscleTensionActivityScreen

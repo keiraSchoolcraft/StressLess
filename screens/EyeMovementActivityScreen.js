@@ -16,7 +16,7 @@ class EyeMovementActivityScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text>eye movement activity screen</Text>
-        <Image source={pic} style={{width: 193, height: 110}}/>
+        {/* <Image source={pic} style={{width: 193, height: 110}}/> */}
         <View style={styles.buttonContainer}>
           <Button
             onPress={() => this.props.navigation.navigate('EyeMovementOutro')}
