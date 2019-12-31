@@ -56,15 +56,9 @@ class BreathingActivityScreen extends React.Component {
     nextTick() {
         if (this.state.currentCycle >= maxCycles) {
             clearInterval(this.interval)
-            this.props.navigation.navigate('Finished')
-            return (
-                <View style={styles.container}>
-                    <Button
-                        onPress={() => this.props.navigation.navigate('BreathingOutroScreen')}
-                        title="Finish"
-                    />
-                </View>
-            )
+            console.log('should navigate')
+            this.props.navigation.navigate('BreathingOutro')
+            console.log('did navigate')
         } else {
             let timeOverall = this.state.timeOverall
             this.setState(previousState => (
