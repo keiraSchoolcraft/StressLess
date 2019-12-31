@@ -49,7 +49,7 @@ class ShowTime extends React.Component {
         style={{
             alignItems: 'center',
             justifyContent: 'center',
-
+            width: 400,
         }} >
             {pics[this.props.currentCycle]}</Text>
       )
