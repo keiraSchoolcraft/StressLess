@@ -17,7 +17,7 @@ class ShowTime extends React.Component {
     render() {
         return (
             <View>
-                <Text>{this.props.label} {this.props.currentTime}</Text>
+                <Text styles={styles.inhaleExhale}>{this.props.label} {this.props.currentTime}</Text>
             </View>
         );
     }
@@ -27,7 +27,7 @@ class InhaleExhale extends React.Component {
     render() {
         let label = this.props.timeInCycle <= cycleInterval / 2 ? 'Inhale' : 'Exhale'
         return (
-            <Text>{label}</Text>
+            <Text styles={styles.inhaleExhale}>{label}</Text>
         )
     }
 }
@@ -76,7 +76,7 @@ class BreathingActivityScreen extends React.Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.title}>Breathing</Text>
-                <View style={styles.wrapper}>
+                <View style={styles.inhaleExhale}>
                     <InhaleExhale currentCycle={this.state.currentCycle} timeInCycle={this.state.timeInCycle} />
                 </View>
 
@@ -99,7 +99,10 @@ class BreathingActivityScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ccc',
+    padding: 30,
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
   },
   buttonContainer: {
     flex: 3,
@@ -108,11 +111,19 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   title: {
+    flex: 3,
     fontSize: 28,
+    padding: 30,
   },
   wrapper: {
     padding: 10,
     fontSize: 30,
+  },
+  inhaleExhale: {
+      fontSize: 60,
+      flex: 3,
+      padding: 30,
+      alignContent: 'center',
   },
 })
 

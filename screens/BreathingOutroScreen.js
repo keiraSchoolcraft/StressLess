@@ -14,7 +14,7 @@ class BreathingOutroScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>breathing outro screen</Text>
+                <Text style={styles.infoText}>Thanks for finishing the breathing activity!</Text>
                 <View style={styles.buttonContainer}>
                     <Button
                         onPress={() => this.props.navigation.navigate('Home')}
@@ -29,13 +29,20 @@ class BreathingOutroScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ccc',
   },
   buttonContainer: {
-    flex: 3,
+    flex: 2,
     textAlign: 'center',
     justifyContent: 'space-around',
     flexDirection: 'column',
+  },
+  infoText: {
+      fontSize: 35,
+      flex: 2,
+      textAlign: 'center',
+      justifyContent: 'space-around',
+      padding: 80,
   },
 })
 
