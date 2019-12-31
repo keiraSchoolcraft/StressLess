@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 
 const cycleInterval = 10
-const maxCycles = 7
+const maxCycles = 21
 class ShowTime extends React.Component {
     render() {
       return (
