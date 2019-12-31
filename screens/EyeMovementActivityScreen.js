@@ -42,6 +42,23 @@ class ShowTime extends React.Component {
         '',
         '',
         '',
+        <Image source={require('../assets/images/dots1b.png')} />,
+        <Image source={require('../assets/images/dots2b.png')} />,
+        <Image source={require('../assets/images/dots3b.png')} />,
+        <Image source={require('../assets/images/dots4b.png')} />,
+        <Image source={require('../assets/images/dots5b.png')} />,
+        <Image source={require('../assets/images/dots6b.png')} />,
+        <Image source={require('../assets/images/dots7b.png')} />,
+        <Image source={require('../assets/images/dots8b.png')} />,
+        <Image source={require('../assets/images/dots9b.png')} />,
+        <Image source={require('../assets/images/dots10b.png')} />,
+        <Image source={require('../assets/images/dots11b.png')} />,
+        <Image source={require('../assets/images/dots12b.png')} />,
+        '',
+        '',
+        '',
+        '',
+        '',
       ]
   
       return (
