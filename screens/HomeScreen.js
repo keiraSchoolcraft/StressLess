@@ -43,13 +43,14 @@ HomeScreen.navigationOptions = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ccc',
   },
   buttonContainer: {
     flex: 3,
     textAlign: 'center',
     justifyContent: 'space-around',
     flexDirection: 'column',
+    fontSize: 45,
   },
   developmentModeText: {
     marginBottom: 20,

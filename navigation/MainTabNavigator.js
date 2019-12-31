@@ -17,7 +17,7 @@ import MuscleTensionOutroScreen from '../screens/MuscleTensionOutroScreen';
 
 import EyeMovementIntroScreen from '../screens/EyeMovementIntroScreen';
 import EyeMovementActivityScreen from '../screens/EyeMovementActivityScreen';
-import EyeMovementOutroScreen from '../screens/EyeMovementOutroScreen';
+import EyeMovementOutroScreen from '../screens/EyeMovementOutroScreen'
 
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
@@ -54,11 +54,7 @@ HomeStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={
-        Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
-      }
+      name={Platform.OS === 'ios' ? 'ios-home' : 'md-home'}
     />
   ),
 };
@@ -91,7 +87,7 @@ const SettingsStack = createStackNavigator(
 SettingsStack.navigationOptions = {
   tabBarLabel: 'About',
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-bonfire' : 'md-bonfire'} />
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-list' : 'md-list'} />
   ),
 };
 
