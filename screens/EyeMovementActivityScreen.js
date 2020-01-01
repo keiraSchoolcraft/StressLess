@@ -59,6 +59,18 @@ class ShowTime extends React.Component {
         '',
         '',
         '',
+        <Image source={require('../assets/images/dots1c.png')} />,
+        <Image source={require('../assets/images/dots2c.png')} />,
+        <Image source={require('../assets/images/dots3c.png')} />,
+        <Image source={require('../assets/images/dots4c.png')} />,
+        <Image source={require('../assets/images/dots5c.png')} />,
+        <Image source={require('../assets/images/dots6c.png')} />,
+        <Image source={require('../assets/images/dots7c.png')} />,
+        <Image source={require('../assets/images/dots8c.png')} />,
+        <Image source={require('../assets/images/dots9c.png')} />,
+        <Image source={require('../assets/images/dots10c.png')} />,
+        <Image source={require('../assets/images/dots11c.png')} />,
+        <Image source={require('../assets/images/dots12c.png')} />,
       ]
   
       return (
@@ -142,7 +154,7 @@ class EyeMovementActivityScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#ccc',
+        backgroundColor: '#f0f',
         padding: 30,
         justifyContent: 'center',
         alignItems: 'center',
