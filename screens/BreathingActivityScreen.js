@@ -1,13 +1,13 @@
 import React from 'react';
 import {
-  Image,
-  Platform,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-  Button,
+    Image,
+    Platform,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
+    Button,
 } from 'react-native';
 
 const cycleInterval = 6
@@ -17,7 +17,7 @@ class ShowTime extends React.Component {
     render() {
         return (
             <View>
-                <Text styles={styles.inhaleExhale}>{this.props.label} {this.props.currentTime}</Text>
+                <Text>{this.props.label} {this.props.currentTime}</Text>
             </View>
         );
     }
@@ -97,34 +97,34 @@ class BreathingActivityScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#ccc',
-    padding: 30,
-    justifyContent: 'space-evenly',
-    alignItems: 'center',
-  },
-  buttonContainer: {
-    flex: 3,
-    textAlign: 'center',
-    justifyContent: 'space-around',
-    flexDirection: 'column',
-  },
-  title: {
-    flex: 3,
-    fontSize: 28,
-    padding: 30,
-  },
-  wrapper: {
-    padding: 10,
-    fontSize: 30,
-  },
-  inhaleExhale: {
-      fontSize: 60,
-      flex: 3,
-      padding: 30,
-      alignContent: 'center',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#49f',
+        padding: 30,
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+    },
+    buttonContainer: {
+        flex: 3,
+        textAlign: 'center',
+        justifyContent: 'space-around',
+        flexDirection: 'column',
+    },
+    title: {
+        flex: 3,
+        fontSize: 28,
+        padding: 30,
+    },
+    wrapper: {
+        padding: 10,
+        fontSize: 30,
+    },
+    inhaleExhale: {
+        fontSize: 60,
+        flex: 3,
+        padding: 30,
+        alignContent: 'center',
+    },
 })
 
 export default BreathingActivityScreen

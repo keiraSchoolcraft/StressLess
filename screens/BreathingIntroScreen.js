@@ -22,6 +22,7 @@ class BreathingIntroScreen extends React.Component {
           <Button
             onPress={() => this.props.navigation.navigate('BreathingActivity')}
             title="Start"
+            color = 'white'
           />
         </View>
       </View>
@@ -32,7 +33,7 @@ class BreathingIntroScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ccc',
+    backgroundColor: '#49f',
   },
   buttonContainer: {
     flex: 3,

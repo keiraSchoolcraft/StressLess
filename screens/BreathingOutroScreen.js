@@ -19,6 +19,7 @@ class BreathingOutroScreen extends React.Component {
                     <Button
                         onPress={() => this.props.navigation.navigate('Home')}
                         title="Take Me Home"
+                        color = 'white'
                     />
                 </View>
             </View>
@@ -29,7 +30,7 @@ class BreathingOutroScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ccc',
+    backgroundColor: '#49f',
   },
   buttonContainer: {
     flex: 2,
