@@ -17,17 +17,20 @@ class HomeScreen extends React.Component {
       <View style={styles.container}>
         <View style={{ flex: 1 }}></View>
         <View style={styles.buttonContainer}>
-          <Button
+          <Button 
             onPress={() => this.props.navigation.navigate('BreathingIntro')}
             title="Breathing"
+            color = 'white'
           />
           <Button
             onPress={() => this.props.navigation.navigate('MuscleTensionIntro')}
             title="Muscle Tension"
+            color = 'white'
           />
           <Button
             onPress={() => this.props.navigation.navigate('EyeMovementIntro')}
             title="Eye Movement"
+            color = 'white'
           />
         </View>
         <View style={{ flex: 1 }}></View>
@@ -43,7 +46,7 @@ HomeScreen.navigationOptions = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ccc',
+    backgroundColor: '#49f',
   },
   buttonContainer: {
     flex: 3,
@@ -51,6 +54,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     flexDirection: 'column',
     fontSize: 45,
+    color: 'white',
   },
   developmentModeText: {
     marginBottom: 20,

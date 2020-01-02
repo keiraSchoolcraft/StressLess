@@ -14,7 +14,7 @@ class EyeMovementOutroScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>Thanks for completing the eye movement activity!</Text>
+                <Text style={styles.infoText}> Thanks for completing the eye movement activity!</Text>
                 <View style={styles.buttonContainer}>
                     <Button
                         onPress={() => this.props.navigation.navigate('Home')}
@@ -29,7 +29,7 @@ class EyeMovementOutroScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#ccc',
+        backgroundColor: '#f0f',
       },
       buttonContainer: {
         flex: 2,

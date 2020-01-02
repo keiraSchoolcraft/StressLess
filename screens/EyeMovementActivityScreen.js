@@ -154,7 +154,7 @@ class EyeMovementActivityScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#f0f',
+        backgroundColor: '#ccc',
         padding: 30,
         justifyContent: 'center',
         alignItems: 'center',
