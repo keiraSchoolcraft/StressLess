@@ -15,6 +15,12 @@ class BreathingOutroScreen extends React.Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.infoText}>Thanks for finishing the breathing activity!</Text>
+                <Text style={styles.infoText}>
+                    Please copy the link below and fill out the survey.
+                </Text>
+                <Text style={styles.infoText}>
+                    https://docs.google.com/forms/d/e/1FAIpQLSeyAJ31zEabP8yR9jriO8l3HIW8gAQEKCDG7w92kA__HlBMhQ/viewform?vc=0&c=0&w=1
+                </Text>
                 <View style={styles.buttonContainer}>
                     <Button
                         onPress={() => this.props.navigation.navigate('Home')}
@@ -39,11 +45,11 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   infoText: {
-      fontSize: 35,
+      fontSize: 25,
       flex: 2,
       textAlign: 'center',
-      justifyContent: 'space-around',
-      padding: 80,
+    //   justifyContent: 'space-between',
+      padding: 10,
   },
 })
 
