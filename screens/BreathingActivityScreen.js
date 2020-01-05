@@ -27,7 +27,7 @@ class InhaleExhale extends React.Component {
     render() {
         let label = this.props.timeInCycle <= cycleInterval / 2 ? 'Inhale' : 'Exhale'
         return (
-            <Text styles={styles.inhaleExhale}>{label}</Text>
+            <Text styles={styles.title}>{label}</Text>
         )
     }
 }
@@ -76,7 +76,7 @@ class BreathingActivityScreen extends React.Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.title}>Breathing</Text>
-                <View style={styles.inhaleExhale}>
+                <View style={styles.title}>
                     <InhaleExhale currentCycle={this.state.currentCycle} timeInCycle={this.state.timeInCycle} />
                 </View>
 

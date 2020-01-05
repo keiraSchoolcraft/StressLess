@@ -18,6 +18,10 @@ class BreathingIntroScreen extends React.Component {
           In this activity you will be guided through a slow breathing pattern.
           You will be asked to inhale for 3s, then exhale for 3s - you will do this 15 times.
         </Text>
+        <Text style={styles.infoText}>
+          At the end, you will be given a link to a survey.
+          Please make note of your current stress level on a scale from 1-10.
+        </Text>
         <View style={styles.buttonContainer}>
           <Button
             onPress={() => this.props.navigation.navigate('BreathingActivity')}
@@ -43,7 +47,7 @@ const styles = StyleSheet.create({
   },
   infoText: {
     flex: 2,
-    fontSize: 35,
+    fontSize: 25,
     textAlign: 'center',
     padding: 30,
     flexShrink: 1,

@@ -19,6 +19,10 @@ class MuscleTensionIntroScreen extends React.Component {
             of your body, starting from the toes and working up to the face.
             Each application of tension should last 10s, with 20s rest intervals in between.
         </Text>
+        <Text style={styles.infoText}>
+          At the end, you will be given a link to a survey.
+          Please make note of your current stress level on a scale from 1-10.
+        </Text>
         <View style={styles.buttonContainer}>
           <Button
             onPress={() => this.props.navigation.navigate('MuscleTensionActivity')}
@@ -45,7 +49,7 @@ const styles = StyleSheet.create({
   infoText: {
       flex: 4,
       padding: 30,
-      fontSize: 35,
+      fontSize: 25,
       textAlign: 'center',
   },
 })

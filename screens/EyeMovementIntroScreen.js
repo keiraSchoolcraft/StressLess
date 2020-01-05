@@ -19,6 +19,10 @@ class EyeMovementIntroScreen extends React.Component {
             Three variants of the activity will be shown, each lasting 24 seconds, making 12 eye movements.
             There will be a 10 second rest interval between each variant.
         </Text>
+        <Text style={styles.infoText}>
+          At the end, you will be given a link to a survey.
+          Please make note of your current stress level on a scale from 1-10.
+        </Text>
         <View style={styles.buttonContainer}>
           <Button
             onPress={() => this.props.navigation.navigate('EyeMovementActivity')}
@@ -56,9 +60,9 @@ const styles = StyleSheet.create({
         fontSize: 30,
     },
     infoText: {
-        flex: 4,
+        flex: 8,
         padding: 10,
-        fontSize: 30,
+        fontSize: 25,
         textAlign: 'center',
     },
 })
