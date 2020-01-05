@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   View,
   Button,
+  Linking,
 } from 'react-native';
 
 class BreathingOutroScreen extends React.Component {
@@ -15,21 +16,25 @@ class BreathingOutroScreen extends React.Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.infoText}>Thanks for finishing the breathing activity!</Text>
-                <Text style={styles.infoText}>
-                    Please copy the link below and fill out the survey.
-                </Text>
-                <Text style={styles.infoText}>
-                    https://docs.google.com/forms/d/e/1FAIpQLSeyAJ31zEabP8yR9jriO8l3HIW8gAQEKCDG7w92kA__HlBMhQ/viewform?vc=0&c=0&w=1
-                </Text>
+                <Text style={styles.infoText}> Please take the Google Survey as linked below.</Text>
                 <View style={styles.buttonContainer}>
+                    <Button
+                        title="Google Survey"
+                        onPress={this._handleOpenWithLinking}
+                        style={styles.button}
+                        color='white'
+                    />
                     <Button
                         onPress={() => this.props.navigation.navigate('Home')}
                         title="Take Me Home"
-                        color = 'white'
+                        color='white'
                     />
                 </View>
             </View>
         );
+    }
+    _handleOpenWithLinking = () => {
+        Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLSeyAJ31zEabP8yR9jriO8l3HIW8gAQEKCDG7w92kA__HlBMhQ/viewform?usp=sf_link');
     }
 }
 
