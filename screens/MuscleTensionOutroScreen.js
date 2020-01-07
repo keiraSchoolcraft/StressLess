@@ -22,12 +22,12 @@ class MuscleTensionOutroScreen extends React.Component {
                         title="Google Survey"
                         onPress={this._handleOpenWithLinking}
                         style={styles.button}
-                        color='white'
+                        color={Platform.OS === 'ios' ? 'white' : '#49f'}
                     />
                     <Button
                         onPress={() => this.props.navigation.navigate('Home')}
                         title="Take Me Home"
-                        color='white'
+                        color={Platform.OS === 'ios' ? 'white' : '#49f'}
                     />
                 </View>
             </View>

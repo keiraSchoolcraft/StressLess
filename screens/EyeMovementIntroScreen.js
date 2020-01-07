@@ -27,7 +27,7 @@ class EyeMovementIntroScreen extends React.Component {
           <Button
             onPress={() => this.props.navigation.navigate('EyeMovementActivity')}
             title="Start"
-            color = 'white'
+            color={Platform.OS === 'ios' ? 'white' : '#49f'}
           />
         </View>
       </View>
@@ -60,9 +60,9 @@ const styles = StyleSheet.create({
         fontSize: 30,
     },
     infoText: {
-        flex: 8,
+        flex: 10,
         padding: 10,
-        fontSize: 15,
+        fontSize: 18,
         textAlign: 'center',
     },
 })

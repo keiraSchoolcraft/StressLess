@@ -27,7 +27,7 @@ class MuscleTensionIntroScreen extends React.Component {
           <Button
             onPress={() => this.props.navigation.navigate('MuscleTensionActivity')}
             title="Start"
-            color = 'white'
+            color={Platform.OS === 'ios' ? 'white' : '#49f'}
           />
         </View>
       </View>
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   infoText: {
       flex: 4,
       padding: 30,
-      fontSize: 15,
+      fontSize: 20,
       textAlign: 'center',
   },
 })

@@ -1,12 +1,7 @@
-import * as WebBrowser from 'expo-web-browser';
 import React from 'react';
 import {
-  Image,
   Platform,
-  ScrollView,
   StyleSheet,
-  Text,
-  TouchableOpacity,
   View,
   Button,
 } from 'react-native';
@@ -20,17 +15,17 @@ class HomeScreen extends React.Component {
           <Button 
             onPress={() => this.props.navigation.navigate('BreathingIntro')}
             title="Breathing"
-            // color = 'white'
+            color={Platform.OS === 'ios' ? 'white' : '#49f'}
           />
           <Button
             onPress={() => this.props.navigation.navigate('MuscleTensionIntro')}
             title="Muscle Tension"
-            // color = 'white'
+            color={Platform.OS === 'ios' ? 'white' : '#49f'}
           />
           <Button
             onPress={() => this.props.navigation.navigate('EyeMovementIntro')}
             title="Eye Movement"
-            // color = 'white'
+            color={Platform.OS === 'ios' ? 'white' : '#49f'}
           />
         </View>
         <View style={{ flex: 1 }}></View>
@@ -138,6 +133,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#2e78b7',
   },
+  // button: {
+  //   Platform.OS === 'ios' ? 200 : 100,
+  // },
 });
 
 export default HomeScreen

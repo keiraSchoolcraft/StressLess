@@ -78,7 +78,8 @@ class ShowTime extends React.Component {
         style={{
             alignItems: 'center',
             justifyContent: 'center',
-            width: 400,
+            width: 300,
+            height: 300,
         }} >
             {pics[this.props.currentCycle]}</Text>
       )
@@ -166,7 +167,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
     },
     title: {
-        flex: 3,
+        flex: 1,
         fontSize: 28,
         padding: 20,
         textAlign: 'center',

@@ -25,12 +25,12 @@ class EyeMovementOutroScreen extends React.Component {
                         title="Google Survey"
                         onPress={this._handleOpenWithLinking}
                         style={styles.button}
-                        color='white'
+                        color={Platform.OS === 'ios' ? 'white' : '#49f'}
                     />
                     <Button
                         onPress={() => this.props.navigation.navigate('Home')}
                         title="Take Me Home"
-                        color='white'
+                        color={Platform.OS === 'ios' ? 'white' : '#49f'}
                     />
                 </View>
             </View>
@@ -39,7 +39,6 @@ class EyeMovementOutroScreen extends React.Component {
     _handleOpenWithLinking = () => {
         Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLSeyAJ31zEabP8yR9jriO8l3HIW8gAQEKCDG7w92kA__HlBMhQ/viewform?usp=sf_link');
     }
-
 }
 
 
