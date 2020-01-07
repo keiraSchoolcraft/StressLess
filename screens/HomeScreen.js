@@ -20,7 +20,7 @@ class HomeScreen extends React.Component {
           <Button 
             onPress={() => this.props.navigation.navigate('BreathingIntro')}
             title="Breathing"
-            color = 'white'
+            // color = 'white'
           />
           <Button
             onPress={() => this.props.navigation.navigate('MuscleTensionIntro')}
@@ -30,7 +30,7 @@ class HomeScreen extends React.Component {
           <Button
             onPress={() => this.props.navigation.navigate('EyeMovementIntro')}
             title="Eye Movement"
-            color = 'white'
+            // color = 'white'
           />
         </View>
         <View style={{ flex: 1 }}></View>
@@ -46,7 +46,7 @@ HomeScreen.navigationOptions = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#40f',
+    backgroundColor: '#49f',
   },
   buttonContainer: {
     flex: 3,
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     flexDirection: 'column',
     fontSize: 45,
-    color: 'white',
+    // color: 'white',
   },
   developmentModeText: {
     marginBottom: 20,
