@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     infoText: {
         flex: 8,
         padding: 10,
-        fontSize: 25,
+        fontSize: 15,
         textAlign: 'center',
     },
 })

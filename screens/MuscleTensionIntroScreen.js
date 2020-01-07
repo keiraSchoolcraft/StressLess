@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   infoText: {
       flex: 4,
       padding: 30,
-      fontSize: 25,
+      fontSize: 15,
       textAlign: 'center',
   },
 })

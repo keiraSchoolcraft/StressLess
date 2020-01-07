@@ -25,7 +25,7 @@ class HomeScreen extends React.Component {
           <Button
             onPress={() => this.props.navigation.navigate('MuscleTensionIntro')}
             title="Muscle Tension"
-            color = 'white'
+            // color = 'white'
           />
           <Button
             onPress={() => this.props.navigation.navigate('EyeMovementIntro')}
@@ -46,7 +46,7 @@ HomeScreen.navigationOptions = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#49f',
+    backgroundColor: '#40f',
   },
   buttonContainer: {
     flex: 3,
