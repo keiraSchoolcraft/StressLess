@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
           flex: 1,
         //   textAlign: 'center',
           justifyContent: 'space-around',
-          padding: 80,
+          padding: 20,
       },
 })
 

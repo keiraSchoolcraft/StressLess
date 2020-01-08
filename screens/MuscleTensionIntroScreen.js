@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
       flex: 4,
       padding: 30,
       fontSize: 20,
-      textAlign: 'center',
+    //   textAlign: 'center',
   },
 })
 

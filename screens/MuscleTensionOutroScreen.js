@@ -52,9 +52,9 @@ const styles = StyleSheet.create({
       infoText: {
           fontSize: 35,
           flex: 2,
-          textAlign: 'center',
+        //   textAlign: 'center',
           justifyContent: 'space-around',
-          padding: 80,
+          padding: 20,
       },
 })
 

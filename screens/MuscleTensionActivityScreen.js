@@ -96,25 +96,11 @@ class MuscleTensionActivityScreen extends React.Component {
     return (
         <View style={styles.container}>
         <Text style={styles.title}>Muscle Tension Activity</Text>
-        {/* <View style={styles.wrapper}>
-          <DoThing currentCycle={this.state.currentCycle} timeInCycle={this.state.timeInCycle} />
-        </View> */}
         
         <View style={styles.muscleText}>
           <MuscleGuidanceArray currentCycle={this.state.currentCycle} />
         </View>
 
-        {/* <View style={styles.wrapper}>
-          <ShowTime label={'Current Cycle'} currentTime={this.state.currentCycle} />
-        </View> */}
-
-        {/* <View style={styles.wrapper}>
-          <ShowTime label={'Time in Cycle'} currentTime={this.state.timeInCycle} />
-        </View> */}
-
-        <View style={styles.wrapper}>
-          <ShowTime label={'Time Overall'} currentTime={this.state.timeOverall} />
-        </View>
       </View>
     );
   }
