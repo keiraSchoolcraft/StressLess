@@ -80,7 +80,7 @@ class BreathingActivityScreen extends React.Component {
                     <InhaleExhale currentCycle={this.state.currentCycle} timeInCycle={this.state.timeInCycle} style={{fontSize: 25}} />
                 </View>
 
-                <View style={styles.wrapper}>
+                {/* <View style={styles.wrapper}>
                     <ShowTime label={'Current Cycle'} currentTime={this.state.currentCycle} />
                 </View>
 
@@ -90,7 +90,7 @@ class BreathingActivityScreen extends React.Component {
 
                 <View style={styles.wrapper}>
                     <ShowTime label={'Time Overall'} currentTime={this.state.timeOverall} />
-                </View>
+                </View> */}
             </View>
         )
     }

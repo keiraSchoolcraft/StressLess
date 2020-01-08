@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   infoText: {
     flex: 2,
     fontSize: 20,
-    textAlign: 'center',
+    // textAlign: 'center',
     padding: 30,
     flexShrink: 1,
   },
