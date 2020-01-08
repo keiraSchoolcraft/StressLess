@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#49f',
         padding: 30,
         justifyContent: 'space-evenly',
-        alignItems: 'center',
+        // alignItems: 'center',
     },
     buttonContainer: {
         flex: 3,
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         flex: 10,
         padding: 10,
         fontSize: 18,
-        textAlign: 'center',
+        // textAlign: 'center',
     },
 })
 
