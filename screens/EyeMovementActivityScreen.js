@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
   View,
   Button,
-} from 'react-native';               
+} from 'react-native';
 
 const cycleInterval = 2
 const maxCycles = 45
@@ -21,80 +21,83 @@ class ShowTime extends React.Component {
       );
     }
   }
-  
+
   class DotPictureArray extends React.Component {
     render () {
       let pics = [
-        '../assets/images/dots1a.png',
-        '../assets/images/dots2a.png',
-        '../assets/images/dots3a.png',
-        '../assets/images/dots4a.png',
-        '../assets/images/dots5a.png',
-        '../assets/images/dots6a.png',
-        '../assets/images/dots7a.png',
-        '../assets/images/dots8a.png',
-        '../assets/images/dots9a.png',
-        '../assets/images/dots10a.png',
-        '../assets/images/dots11a.png',
-        '../assets/images/dots12a.png',
-        '../assets/images/blank.png',
-        '../assets/images/blank.png',
-        '../assets/images/blank.png',
-        '../assets/images/blank.png',
-        '../assets/images/blank.png',
-        '../assets/images/dots1b.png',
-        '../assets/images/dots2b.png',
-        '../assets/images/dots3b.png',
-        '../assets/images/dots4b.png',
-        '../assets/images/dots5b.png',
-        '../assets/images/dots6b.png',
-        '../assets/images/dots7b.png',
-        '../assets/images/dots8b.png',
-        '../assets/images/dots9b.png',
-        '../assets/images/dots10b.png',
-        '../assets/images/dots11b.png',
-        '../assets/images/dots12b.png',
-        '../assets/images/blank.png',
-        '../assets/images/blank.png',
-        '../assets/images/blank.png',
-        '../assets/images/blank.png',
-        '../assets/images/blank.png',
-        '../assets/images/dots1c.png',
-        '../assets/images/dots2c.png',
-        '../assets/images/dots3c.png',
-        '../assets/images/dots4c.png',
-        '../assets/images/dots5c.png',
-        '../assets/images/dots6c.png',
-        '../assets/images/dots7c.png',
-        '../assets/images/dots8c.png',
-        '../assets/images/dots9c.png',
-        '../assets/images/dots10c.png',
-        '../assets/images/dots11c.png',
-        '../assets/images/dots12c.png',
+        require('../assets/images/dots1a.png'),
+        require('../assets/images/dots2a.png'),
+        require('../assets/images/dots3a.png'),
+        require('../assets/images/dots4a.png'),
+        require('../assets/images/dots5a.png'),
+        require('../assets/images/dots6a.png'),
+        require('../assets/images/dots7a.png'),
+        require('../assets/images/dots8a.png'),
+        require('../assets/images/dots9a.png'),
+        require('../assets/images/dots10a.png'),
+        require('../assets/images/dots11a.png'),
+        require('../assets/images/dots12a.png'),
+        require('../assets/images/blank.png'),
+        require('../assets/images/blank.png'),
+        require('../assets/images/blank.png'),
+        require('../assets/images/blank.png'),
+        require('../assets/images/blank.png'),
+        require('../assets/images/dots1b.png'),
+        require('../assets/images/dots2b.png'),
+        require('../assets/images/dots3b.png'),
+        require('../assets/images/dots4b.png'),
+        require('../assets/images/dots5b.png'),
+        require('../assets/images/dots6b.png'),
+        require('../assets/images/dots7b.png'),
+        require('../assets/images/dots8b.png'),
+        require('../assets/images/dots9b.png'),
+        require('../assets/images/dots10b.png'),
+        require('../assets/images/dots11b.png'),
+        require('../assets/images/dots12b.png'),
+        require('../assets/images/blank.png'),
+        require('../assets/images/blank.png'),
+        require('../assets/images/blank.png'),
+        require('../assets/images/blank.png'),
+        require('../assets/images/blank.png'),
+        require('../assets/images/dots1c.png'),
+        require('../assets/images/dots2c.png'),
+        require('../assets/images/dots3c.png'),
+        require('../assets/images/dots4c.png'),
+        require('../assets/images/dots5c.png'),
+        require('../assets/images/dots6c.png'),
+        require('../assets/images/dots7c.png'),
+        require('../assets/images/dots8c.png'),
+        require('../assets/images/dots9c.png'),
+        require('../assets/images/dots10c.png'),
+        require('../assets/images/dots11c.png'),
+        require('../assets/images/dots12c.png'),
       ]
-  
-      return (
-        <Image source={pics[index]}/>
-      )
-    }
+          return (
+            <View>
+                <Image source={pics[this.props.currentCycle]}
+                    style={{ width: 300, height: 400}} />
+            </View>
+
+          )
+      }
   }
 class EyeMovementActivityScreen extends React.Component {
     constructor(props) {
         super(props);
-    
+
         this.state = {
           currentCycle: 0,
           timeInCycle: 0,
           timeOverall: 0,
         }
       }
-    
+
       componentDidMount() {
         this.interval = setInterval(() => {
           this.nextTick()
         }, 1000)
       }
-    
+
       componentWillUnmount() {
         clearInterval(this.interval);
       }
@@ -116,18 +119,19 @@ class EyeMovementActivityScreen extends React.Component {
             console.log(this.state);
         }
     }
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text style={styles.title}>Eye Movement</Text>
+  render() {
+    return (
+        <View style={styles.container}>
+        <Text style={styles.title}>Eye Movement</Text>
 
-                <View style={styles.wrapper}>
-                    <DotPictureArray currentCycle={this.state.currentCycle} />
-                </View>
 
-            </View>
-        );
-    }
+        <View style={styles.wrapper}>
+          <DotPictureArray currentCycle={this.state.currentCycle} />
+        </View>
+
+      </View>
+    );
+  }
 }
 
 
