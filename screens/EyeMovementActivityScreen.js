@@ -95,7 +95,7 @@ class EyeMovementActivityScreen extends React.Component {
       componentDidMount() {
         this.interval = setInterval(() => {
           this.nextTick()
-        }, 1000)
+        }, 2000)
       }
 
       componentWillUnmount() {
