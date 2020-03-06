@@ -41,7 +41,7 @@ HomeScreen.navigationOptions = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#49f',
+    backgroundColor: '#43A386',
   },
   buttonContainer: {
     flex: 3,

@@ -38,7 +38,7 @@ class EyeMovementIntroScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#49f',
+        backgroundColor: '#43A386',
         padding: 30,
         justifyContent: 'space-evenly',
         // alignItems: 'center',

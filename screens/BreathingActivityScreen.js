@@ -79,18 +79,6 @@ class BreathingActivityScreen extends React.Component {
                 <View style={styles.title}>
                     <InhaleExhale currentCycle={this.state.currentCycle} timeInCycle={this.state.timeInCycle} style={{fontSize: 25}} />
                 </View>
-
-                {/* <View style={styles.wrapper}>
-                    <ShowTime label={'Current Cycle'} currentTime={this.state.currentCycle} />
-                </View>
-
-                <View style={styles.wrapper}>
-                    <ShowTime label={'Time in Cycle'} currentTime={this.state.timeInCycle} />
-                </View>
-
-                <View style={styles.wrapper}>
-                    <ShowTime label={'Time Overall'} currentTime={this.state.timeOverall} />
-                </View> */}
             </View>
         )
     }
@@ -99,7 +87,7 @@ class BreathingActivityScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#49f',
+        backgroundColor: '#43A386',
         padding: 30,
         justifyContent: 'space-evenly',
         alignItems: 'center',
